@@ -7,7 +7,7 @@ const ExploreGroup = ({ GroupImage, GroupName }) => {
   return (
     <motion.div
       variants={boxAnimation}
-      // whileHover={{ scale: 1.1 }}
+      whileHover={{ scale: 1.1 }}
       className="w-3/5 md:w-fit shadow-md rounded-lg h-fit mt-12 pb-6"
     >
       <img

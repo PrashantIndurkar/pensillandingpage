@@ -62,6 +62,7 @@ const Home = () => {
           </motion.p>
           <motion.a
             variants={fadeIn}
+            whileHover={{ scale: 1.1 }}
             href="#"
             className="text-primaryBlueLight hover:text-primaryBlue transition duration-150 font-bold tracking-wide text-xl sm:text-2xl md:text-3xl"
           >
@@ -154,7 +155,7 @@ const Home = () => {
           initial="offScreen"
           whileInView={"onScreen"}
           viewport={{ once: true, amount: 0.5 }}
-          className="bg-green-50 flex flex-col md:flex-row py-20 justify-center items-center px-4 md:px-14 lg:px-32 gap-x-6"
+          className="bg-green-50 flex flex-col md:flex-row py-20 justify-center items-center px-4 md:px-10 lg:px-28 gap-x-6"
         >
           <motion.div
             variants={fadeIn}
@@ -194,7 +195,7 @@ const Home = () => {
           className="md:px-14 lg:px-24 flex flex-col w-full items-center mt-12"
         >
           <h1 className="text-2xl font-bold md:text-3xl">Community Groups</h1>
-          <div className="flex flex-col items-center justify-center md:grid md:grid-cols-3 md:px-20 justify-items-center md:gap-x-12 mt-6 gap-y-6">
+          <div className="flex flex-col items-center justify-center md:grid md:grid-cols-3 md:px-10 justify-items-center md:gap-x-12 mt-6 gap-y-6">
             <ExploreGroup GroupImage={jsGroup} GroupName={"Javascript Group"} />
             <ExploreGroup
               GroupImage={FrontEndGroup}
@@ -218,7 +219,7 @@ const Home = () => {
         initial={"offScreen"}
         whileInView={"onScreen"}
         viewport={{ once: true, amount: 0.5 }}
-        className="mt-14 px-4 lg:px-52 sm:px-8 md:px-24 h-1/2 mb-12"
+        className="mt-14 px-4 lg:px-36 sm:px-8 md:px-24 h-1/2 mb-12"
       >
         <motion.h1
           variants={boxAnimation}
