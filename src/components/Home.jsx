@@ -70,7 +70,7 @@ const Home = () => {
         </div>
         <motion.div
           variants={fadeIn}
-          className="px-6 sm:px-8 md:px-14 lg:px-40"
+          className="px-6 sm:px-8 md:px-14 lg:px-40 flex justify-center items-center"
         >
           <img src={gif} alt="community Gif" className="rounded-xl " />
         </motion.div>
