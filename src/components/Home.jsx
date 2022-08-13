@@ -93,7 +93,7 @@ const Home = () => {
           </motion.h2>
           <motion.p
             variants={loadText}
-            className="pt-4 text-center pb-14 w-4/5 md:w-4/5 lg:w-3/6"
+            className="pt-10 text-center pb-14 w-4/5 md:w-4/5 lg:w-3/6"
           >
             This is the best and most highly active community in front end
             development and you can be a part of this community just click on{" "}

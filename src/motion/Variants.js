@@ -35,7 +35,7 @@ export const boxAnimation = {
     y: 0,
     opacity: 1,
     transition: {
-      staggerChildren: 0.4,
+      staggerChildren: 0.3,
       duration: 0.7,
     },
   },
