@@ -17,6 +17,7 @@ import { motion } from "framer-motion";
 import { fadeIn, boxAnimation, loadText, navMotion } from "../motion/Variants";
 import Faq from "./Faq";
 import Chat from "./Chat";
+import confImg2 from "../assets/LiveConf_teemu-paananen-bzdhc5b3Bxs-unsplash.jpg";
 
 const Home = () => {
   return (
@@ -261,13 +262,80 @@ const Home = () => {
           </button>
         </div>
       </motion.section>
+      <motion.section
+        variants={loadText}
+        initial={"offScreen"}
+        whileInView={"onScreen"}
+        viewport={{ once: true, amount: 0.5 }}
+        className="px-4 mt-32 pb-12 bg-[#faf9f9] text-pensilBlack"
+      >
+        <motion.h1
+          variants={loadText}
+          className="text-center font-bold pt-20 text-2xl md:text-3xl"
+        >
+          <span className="text-3xl lg:text-4xl align-middle">🔴</span>{" "}
+          Community Live Events
+        </motion.h1>
+
+        <motion.div variants={loadText} className="px-6 md:px-14 lg:px-36">
+          <img
+            src={confImg2}
+            className="rounded-xl mt-12 object-cover  lg:h-[40rem]  w-full block"
+            alt="chris-montgomery-smgTvepind4-unsplash"
+          />
+
+          <motion.div
+            variants={loadText}
+            initial={"offScreen"}
+            whileInView={"onScreen"}
+            viewport={{ once: true, amount: 1 }}
+            className="mt-12 mx-6 mb-12  lg:flex gap-x-6 md:mx-auto"
+          >
+            <motion.div variants={loadText}>
+              <h1
+                variants={loadText}
+                className="font-bold text-xl mb-6 mt-10 tracking-wider"
+              >
+                Immersive Experience
+              </h1>
+              <p className="tracking-wide">
+                Conduct Live sessions or webinar, get the best audio video
+                quality
+              </p>
+            </motion.div>
+
+            <motion.div variants={loadText}>
+              <h1
+                variants={loadText}
+                className="font-bold text-xl mb-6 mt-10 tracking-wider"
+              >
+                Host Event with Live QnA
+              </h1>
+              <p className="tracking-wide">
+                Invite hosts, moderator & get the best live experience for your
+                community
+              </p>
+            </motion.div>
+
+            <motion.div variants={loadText}>
+              <h1 className="font-bold text-xl mb-6 mt-10 tracking-wider">
+                Share your live recordings
+              </h1>
+              <p className="tracking-wide">
+                Share or post recording on Youtube, Facebook, Vimeo, or any
+                other platform
+              </p>
+            </motion.div>
+          </motion.div>
+        </motion.div>
+      </motion.section>
       {/* Frequently asked Quesions */}
       <motion.section
         variants={boxAnimation}
         initial={"offScreen"}
         whileInView={"onScreen"}
         viewport={{ once: true, amount: 0.5 }}
-        className="px-10 py-12 mb-14 md:px-24 lg:px-52 "
+        className="px-10 py-20 mb-14 md:px-24 lg:px-52 "
       >
         <motion.h1
           variants={boxAnimation}
@@ -317,7 +385,10 @@ const Home = () => {
         <div className="w-1/2">
           <img src={pensil} alt="" className="cursor-pointer" />
           <p className="text-sm my-4">
-            &#169; Pensil. All Rights Reserved. <br /> Made with ❤️ from India‍
+            &#169; Pensil. All Rights Reserved. <br />{" "}
+            <span className="font-bold text-[#516ee1]">
+              Made with ❤️ from India‍
+            </span>
           </p>
           <p className="text-sm my-4">Privacy Policy Terms & Conditions</p>
         </div>
