@@ -266,7 +266,7 @@ const Home = () => {
         variants={loadText}
         initial={"offScreen"}
         whileInView={"onScreen"}
-        viewport={{ once: true, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.3 }}
         className="px-4 mt-32 pb-12 bg-[#faf9f9] text-pensilBlack"
       >
         <motion.h1
@@ -280,7 +280,7 @@ const Home = () => {
         <motion.div variants={loadText} className="px-6 md:px-14 lg:px-36">
           <img
             src={confImg2}
-            className="rounded-xl mt-12 object-cover  lg:h-[40rem]  w-full block"
+            className="rounded-xl mt-20 object-cover  lg:h-[40rem]  w-full shadow-lg"
             alt="chris-montgomery-smgTvepind4-unsplash"
           />
 
@@ -289,7 +289,7 @@ const Home = () => {
             initial={"offScreen"}
             whileInView={"onScreen"}
             viewport={{ once: true, amount: 1 }}
-            className="mt-12 mx-6 mb-12  lg:flex gap-x-6 md:mx-auto"
+            className="mt-12 mx-6 mb-16  lg:flex gap-x-6 md:mx-auto"
           >
             <motion.div variants={loadText}>
               <h1
