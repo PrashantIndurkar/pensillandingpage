@@ -3,7 +3,14 @@ import communityLogo from "../assets/jsc.svg";
 import { ChevronDownIcon, ChevronRightIcon } from "@heroicons/react/solid";
 import gif from "../assets/jsc.gif";
 import Item from "./Item";
-import { SiJavascript } from "react-icons/si";
+import {
+  SiJavascript,
+  SiTypescript,
+  SiRedux,
+  SiTailwindcss,
+  SiReact,
+  SiNextdotjs,
+} from "react-icons/si";
 import hitesh from "../assets/hitesh.jpg";
 import { BsInstagram, BsFacebook, BsYoutube, BsTwitter } from "react-icons/bs";
 import pensil from "../assets/pensil_logo.svg";
@@ -118,31 +125,31 @@ const Home = () => {
             }
           />
           <Item
-            Icon={SiJavascript}
+            Icon={SiTypescript}
             description={
               "Post your queries into the desired group and get instant support from developers"
             }
           />
           <Item
-            Icon={SiJavascript}
+            Icon={SiRedux}
             description={
               "Post your queries into the desired group and get instant support from developers"
             }
           />
           <Item
-            Icon={SiJavascript}
+            Icon={SiTailwindcss}
             description={
               "Post your queries into the desired group and get instant support from developers"
             }
           />
           <Item
-            Icon={SiJavascript}
+            Icon={SiReact}
             description={
               "Post your queries into the desired group and get instant support from developers"
             }
           />
           <Item
-            Icon={SiJavascript}
+            Icon={SiNextdotjs}
             description={
               "Post your queries into the desired group and get instant support from developers"
             }

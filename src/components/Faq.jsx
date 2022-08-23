@@ -10,9 +10,10 @@ const Faq = ({ answer, question }) => {
     <motion.div
       variants={boxAnimation}
       className="mt-6 border-b border-zinc-300 pb-4"
+      onClick={() => setVisible(!visible)}
     >
       <div className="flex justify-between">
-        <h1 className="font-semibold">{question}</h1>
+        <h1 className="font-semibold cursor-pointer">{question}</h1>
         {visible ? (
           <MinusCircleIcon
             className="h-5 w-5 md:h-7 md:w-7 cursor-pointer text-blue-600"

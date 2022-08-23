@@ -8,6 +8,9 @@ module.exports = {
         primaryBlueLight: "#3495FF",
         pensilBlack: "#1d1916",
       },
+      fontFamily: {
+        Montserrat: ["Montserrat", "cursive"],
+      },
     },
   },
   plugins: [],
